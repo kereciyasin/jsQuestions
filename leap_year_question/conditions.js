@@ -5,12 +5,12 @@
 
 // * Apart from these conditions, in years that do not meet these criteria, February has 28 days, while in leap years, it has 29 days. Given this information, write a code in JavaScript to determine if a year is a leap year or not.
 
+let year = +prompt("Please enter a year");
 
-
-
-
-
-
-
-
-
+if (year % 4 == 0 && year % 100 != 0) {
+  console.log(`${year} is the Leap year.`);
+} else if (year % 400 == 0) {
+  console.log(`${year} is the Leap year.`);
+} else {
+  console.log(`${year} isn't the Leap year.`);
+}
