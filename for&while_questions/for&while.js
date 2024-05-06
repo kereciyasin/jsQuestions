@@ -6,9 +6,9 @@
 //   }
 // }
 
-//*  Print the average of 5 numbers obtained from the user to the console. 
+//*  Print the average of 5 numbers obtained from the user to the console.
 
-// let counter = 0 
+// let counter = 0
 // let total = 0
 // while(counter<5){
 //   let number = +prompt("Please enter a number: ")
@@ -19,3 +19,16 @@
 
 //* Write code that takes numbers from the user and adds them up until a negative number is entered, then prints the result to the console.
 
+let conditions = true;
+let sum = 0;
+
+while (conditions) {
+  let number = +prompt("Please enter a number: ");
+
+  if (number < 0) {
+    conditions = false;
+    continue;
+  }
+  sum += number;
+}
+console.log(sum);
