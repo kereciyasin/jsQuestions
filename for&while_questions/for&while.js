@@ -15,4 +15,4 @@ while(counter<5){
   total += number
   counter++
 }
-console.log(counter);
+console.log(total / counter);
