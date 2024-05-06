@@ -19,16 +19,30 @@
 
 //* Write code that takes numbers from the user and adds them up until a negative number is entered, then prints the result to the console.
 
-let conditions = true;
-let sum = 0;
+// let conditions = true;
+// let sum = 0;
 
-while (conditions) {
-  let number = +prompt("Please enter a number: ");
+// while (conditions) {
+//   let number = +prompt("Please enter a number: ");
 
-  if (number < 0) {
-    conditions = false;
-    continue;
+//   if (number < 0) {
+//     conditions = false;
+//     continue;
+//   }
+//   sum += number;
+// }
+// console.log(sum);
+
+//* Could you print the following output to the console?
+//* ****
+//* ****
+//* ****
+
+let stars = "";
+for (i = 0; i < 5; i++) {
+  for (let j = 0; j < 5; j++) {
+    stars += "*";
   }
-  sum += number;
+  stars += "\n";
 }
-console.log(sum);
+console.log(stars);
