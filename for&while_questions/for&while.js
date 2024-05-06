@@ -8,11 +8,14 @@
 
 //*  Print the average of 5 numbers obtained from the user to the console. 
 
-let counter = 0 
-let total = 0
-while(counter<5){
-  let number = +prompt("Please enter a number: ")
-  total += number
-  counter++
-}
-console.log(total / counter);
+// let counter = 0 
+// let total = 0
+// while(counter<5){
+//   let number = +prompt("Please enter a number: ")
+//   total += number
+//   counter++
+// }
+// console.log(total / counter);
+
+//* Write code that takes numbers from the user and adds them up until a negative number is entered, then prints the result to the console.
+
