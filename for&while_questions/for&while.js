@@ -38,11 +38,21 @@
 //* ****
 //* ****
 
-let stars = "";
-for (i = 0; i < 5; i++) {
-  for (let j = 0; j < 5; j++) {
-    stars += "*";
+// let stars = "";
+// for (i = 0; i < 5; i++) {
+//   for (let j = 0; j < 5; j++) {
+//     stars += "*";
+//   }
+//   stars += "\n";
+// }
+// console.log(stars);
+
+
+for (let i = 1; i < 8; i++) {
+  let row = "";
+  for (let j = 0; j < i; j++) {
+    row += "*";
   }
-  stars += "\n";
+  console.log(row);
 }
-console.log(stars);
+
