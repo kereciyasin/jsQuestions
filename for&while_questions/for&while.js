@@ -9,6 +9,10 @@
 //*  Print the average of 5 numbers obtained from the user to the console. 
 
 let counter = 0 
+let total = 0
 while(counter<5){
-  console.log();
+  let number = +prompt("Please enter a number: ")
+  total += number
+  counter++
 }
+console.log(counter);
