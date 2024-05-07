@@ -1,3 +1,7 @@
+
+// * Write the function that finds the sum of the integer divisors of a given number? 
+
+
 const num = +prompt("Please enter a number: ");
 function sumOfDivisors(num) {
   let sum = 0;
