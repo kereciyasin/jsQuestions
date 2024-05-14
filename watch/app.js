@@ -5,19 +5,19 @@ function showTime() {
   let hour = date.getHours();
   let minute = date.getMinutes();
   let second = date.getSeconds();
-  let session = "AM";
+  let session = "PM";
 
-  if (hour === 0) {
+  if (hour === 12 && session == "AM") {
+    hour = 0;
+  }
+
+  if (hour == 12 && session == "PM") {
     hour = 12;
   }
 
   if (hour > 12) {
     session = "PM";
     hour = hour - 12;
-  }
-
-  if (hour < 10) {
-    hour = "0" + hour;
   }
 
   if (second < 10) {
