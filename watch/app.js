@@ -1,10 +1,34 @@
 const display = document.querySelector(".clockDisplay");
 
-let date = new Date();
-console.log(date);
-let hour = date.getHours();
-let minute = date.getHours();
-let second = date.getHours();
-let session = "AM";
+function showTime() {
+  let date = new Date();
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  let second = date.getSeconds();
+  let session = "AM";
 
-display.innerHTML = hour + ":" + minute + ":" + second + ":" + session;
+  if (hour === 0) {
+    hour = 12;
+  }
+
+  if (hour > 12) {
+    session = "PM";
+    hour = hour - 12;
+  }
+
+  if (hour < 10) {
+    hour = "0" + hour;
+  }
+
+  if (second < 10) {
+    second = "0" + second;
+  }
+
+  if (minute < 10) {
+    minute = "0" + minute;
+  }
+
+  display.innerHTML = hour + ":" + minute + ":" + second + ":" + session;
+}
+
+setInterval(showTime, 1000);
